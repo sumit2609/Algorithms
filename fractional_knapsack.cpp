@@ -36,11 +36,13 @@ double fractionalKnapsack(int w, Item arr[], int n)
 
 
 int main(){
+    cout<<"Enter no. of item and weight"<<endl;
     int n,w;
 
     cin>>n>>w;
     Item arr[n];
 
+    cout<<"Enter elements in array"<<endl;
     for(int i = 0; i<n; i++){
         cin>>arr[i].value>>arr[i].weight;
     }

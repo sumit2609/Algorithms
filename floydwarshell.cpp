@@ -30,7 +30,7 @@ void floyd_warshall(int graph[V][V])
         }
     }
 
-    //check for negative edge weight cycle
+    // check for negative edge weight cycle
     for(int i = 0; i<V; i++){
         if(dist[i][i]<0)
         {
@@ -49,6 +49,7 @@ void floyd_warshall(int graph[V][V])
 }
 
 int main(){
+
     int graph[V][V] = {
         {0,1,4,INT_MAX,INT_MAX,INT_MAX},
         {INT_MAX,0,4,2,7,INT_MAX},
@@ -60,7 +61,7 @@ int main(){
 
     // int graph[V][V] = {
     //     {0,3,INT_MAX,1},
-    //     {2,0,INT_MAX,7},
+    //     {2,0,INT_MAX,INT_MAX},
     //     {INT_MAX,1,0,INT_MAX},
     //     {INT_MAX,INT_MAX,2,0}
     // };

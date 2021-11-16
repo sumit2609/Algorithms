@@ -65,9 +65,9 @@ int main() {
     clock_t end_time = clock();
     cout<<"\nEnd time = "<<end_time<<"\n";
 
-    cout<<"\n\nSorted array : \n";
-    for(int i=0;i<n;i++)
-        cout<<arr[i]<<" ";
+    // cout<<"\n\nSorted array : \n";
+    // for(int i=0;i<n;i++)
+    //     cout<<arr[i]<<" ";
 
     // end - start / clocks per sec
     cout<<"\n\nTotal execution time = "<<float(end_time - start_time)/CLOCKS_PER_SEC<<"\n";
