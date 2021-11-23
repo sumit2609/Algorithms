@@ -31,6 +31,7 @@ int main()
     key[0] = 0;
     parent[0] = -1;
 
+    //count is till N-1 because in each step we are selecting an edge and in mst if there are N nodes then there are N-1 edges 
     for (int count = 0; count < N - 1; count++)
     {
         int mini = INT_MAX, u;
