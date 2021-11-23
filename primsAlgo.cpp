@@ -35,7 +35,7 @@ int main()
     for (int count = 0; count < N - 1; count++)
     {
         int mini = INT_MAX, u;
-
+        //edge with min weight
         for (int v = 0; v < N; v++)
             if (mst[v] == false && key[v] < mini)
                 mini = key[v], u = v;
