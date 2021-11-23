@@ -53,10 +53,10 @@ int main()
                 parent[v] = u, key[v] = weight;
         }
     }
-    cout<<"from     -     to"<<endl;
+    cout<<"from    -    to"<<endl;
     for (int i = 1; i < N; i++)
     {
-        cout << parent[i] << " - " << i << endl;
+        cout << parent[i] << "    -    " << i << endl;
     }
 
     return 0;
