@@ -4,6 +4,7 @@ using namespace std;
 int main()
 {
     //vertices,edges
+    cout<<"enter no. of vertices and edges"<<endl;
     int N, m;
     cin >> N >> m;
 
@@ -12,6 +13,7 @@ int main()
 
     for (int i = 0; i < m; i++)
     {
+        cout<<"enter edge "<<i+1<<" :"<<endl; 
         cin >> a >> b >> wt;
         adj[a].push_back({b, wt});
         adj[b].push_back({a, wt});
@@ -51,7 +53,7 @@ int main()
                 parent[v] = u, key[v] = weight;
         }
     }
-
+    cout<<"from     -     to"<<endl;
     for (int i = 1; i < N; i++)
     {
         cout << parent[i] << " - " << i << endl;
