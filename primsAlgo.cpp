@@ -4,12 +4,14 @@ using namespace std;
 int main()
 {
     //vertices,edges
+    cout << "Enter no. of vertices and edges in graph" << end;
     int N, m;
     cin >> N >> m;
 
     vector<pair<int, int>> adj[N];
     int a, b, wt;
 
+    cout << "Enter the graph edges with weight" << end;
     for (int i = 0; i < m; i++)
     {
         cin >> a >> b >> wt;
